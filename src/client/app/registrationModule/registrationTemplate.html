@@ -1,0 +1,75 @@
+<div class="registration">
+    <h1 class="well"> Registration Form </h1>
+    <div class="col-lg-10 well">
+        <div class="row">
+            <form  name="userForm" ng-submit="submitForm()" novalidate>
+                <div class="col-sm-8">
+                    <div class="row">
+                        <div class="col-sm-4 form-group" ng-class="{ 'has-error' : userForm.firstname.$invalid && !userForm.firstname.$pristine }">
+                            <label> First Name </label>
+                            <input type="text"name="firstname" placeholder="First Name " class="form-control" ng-model="userName"required>
+                            <p ng-show="userForm.firstname.$invalid && !userForm.firstname.$pristine" class="help-block">First name is required.</p>
+                        </div>
+
+                        <div class="col-sm-4 form-group" ng-class="{ 'has-error' : userForm.lastname.$invalid && !userForm.lastname.$pristine }">
+                            <label> Last Name </label>
+                            <input type="text" name="lastname" placeholder="Last Name" class="form-control" ng-model="firstName" required>
+                            <p ng-show="userForm.lastname.$invalid && !userForm.lastname.$pristine" class="help-block">Last name is required.</p>
+                        </div>
+
+                        <div class="col-sm-4 form-group"ng-class="{ 'has-error' : userForm.username.$invalid && !userForm.username.$pristine }">
+                            <label> User Name </label>
+                            <input type="text" name="username" placeholder="User Name" class="form-control" ng-model="lastName"required minlength="6">
+                            <p ng-show="userForm.username.$error.minlength" class="help-block">Username is too short.</p>
+                        </div>
+
+                        <div class="col-sm-4 form-group"ng-class="{ 'has-error' : userForm.password.$invalid && !userForm.password.$pristine }">
+                            <label> Password </label>
+                            <input type="password" name="password" placeholder="Password" class="form-control"  ng-model="password" required minlength="8">
+                            <p ng-show="userForm.password.$error.minlength" class="help-block">password is too short.</p>
+                        </div>
+
+                        <div class="col-sm-4 form-group"ng-class="{ 'has-error' : userForm.retypePassword.$invalid && !userForm.retypePassword.$pristine }">
+                            <label> Re-Password </label>
+                            <input type="password" name="retypePassword" placeholder="Re-TypePassword" class="form-control"  ng-model="retypePassword" required ng-minlength="8">
+                            <p ng-show="userForm.retypePassword.$error.minlength" class="help-block">password is too short.</p>
+                        </div>
+
+                        <div class="col-sm-4 form-group" ng-class="{ 'has-error' : userForm.phonenumber.$invalid && !userForm.phonenumber.$pristine }">
+                            <label> Phone Number </label>
+                            <input type="text" name="phonenumber" placeholder="Phone Number" class="form-control"  ng-model="phoneNumber" required ng-minlength="10"ng-maxlength="10">
+                            <p ng-show="userForm.phonenumber.$error.minlength" class="help-block">Min 10 digits.</p>
+                            <p ng-show="userForm.phonenumber.$error.maxlength" class="help-block">Max 10 digits.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group"  ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+                        <label>Email Address</label>
+                        <input type="email"name="email" placeholder="Enter Email Address Here.." class="form-control"  ng-model="emailID">
+                        <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-sm-4 form-group">
+                            <label>City</label>
+                            <input type="text" placeholder="Enter City Name Here.." class="form-control">
+                        </div>
+                        <div class="col-sm-4 form-group">
+                            <label>State</label>
+                            <input type="text" placeholder="Enter State Name Here.." class="form-control">
+                        </div>
+                        <div class="col-sm-4 form-group">
+                            <label>Zip</label>
+                            <input type="text" placeholder="Enter Zip Code Here.." class="form-control">
+                        </div>
+                    </div>
+
+
+                       <button type="button" class="btn btn-lg btn-info" ng-disabled="userForm.$invalid">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

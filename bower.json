@@ -1,0 +1,15 @@
+{
+  "name": "ng-signin_register",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "angular": "^1.5.6",
+    "angular-resource": "^1.5.6",
+    "angular-ui-router": "^0.3.0",
+    "bootstrap": "^3.3.6",
+    "components-font-awesome": "^4.6.3"
+  }
+}

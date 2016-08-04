@@ -1,0 +1,117 @@
+
+body {
+  background:#ccc;
+}
+
+/* ================================================== */
+/* Reset CSS */
+/* ================================================== */
+
+* {
+  margin:0px;
+  padding:0px;
+}
+
+/* ================================================== */
+/* Global CSS */
+/* ================================================== */
+.wraper {
+  width:980px;
+  border:1px solid red;
+  background-color: white;
+  margin:0 auto;
+  padding:10px;
+  font-family: sans-serif;
+  font-size: 13px;
+  color: #333;
+}
+
+/*
+/!* ===================================================== *!/
+/!* Resuable component
+/!* ===================================================== *!/
+
+.bar {
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+.bar .bar-left{
+  float: left;
+  width:200px;
+  height:15px;
+  background: grey;
+}
+.bar .bar-right{
+  float: right;
+  width:760px;
+  height:15px;
+  background-color: red;
+
+}
+
+.menu {
+  background: blue;
+  float: left;
+  width: 190px;
+  color:#fff;
+  padding: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.menu ul {
+  padding-left: 26px;
+}
+
+.menu li {
+  padding-bottom: 5px;
+}
+
+/!* ================================================ *!/
+/!* Block level css
+/!* ================================================ *!/
+.banner-content {
+  overflow: hidden;
+}
+
+.banner-content .banner-img {
+  float: right;
+  width: 760px;
+}
+
+.content-data {
+  overflow: hidden;
+  position: relative;
+}
+.content-data .content-page-data {
+  float: right;
+  width: 760px;
+}
+
+.content .bar-right{
+  background: blue;
+}
+.content .menu{
+  background: pink;
+}
+
+.header {
+  height:50px;
+  border:1px solid red;
+}
+
+.footer {
+  padding: 10px 0;
+
+}
+
+.balnk {
+  position:absolute;
+  top: 0px;
+  left:0px;
+  width: 200px;
+  height: 100%;
+  background: pink;
+}
+
+*/
